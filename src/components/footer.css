@@ -1,0 +1,8 @@
+.footer-container{
+    z-index: 0;
+    position: fixed;
+}
+.footer-content{
+    font-weight: 300;
+    font-size: 15px;
+}

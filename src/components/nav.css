@@ -1,0 +1,285 @@
+*{
+  box-sizing: border-box;
+}
+
+
+  .nav-icon {
+    width: 16px;
+    height: 16px;
+    margin: 8px;
+    background-color: rgb(94, 19, 233);
+  }
+  
+  /* Navbar.css */
+  
+  .navbar-container {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 20px;
+    background-color: #fff; /* Adjust the background color as needed */
+    color: #000; /* Adjust the text color as needed */
+    z-index: 2;
+  }
+  
+  
+  .nav-left-section {
+    display: flex;
+    align-items: center;
+    margin: auto 20px;
+  }
+  
+  .nav-right-section {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .brand-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-right: auto;
+    justify-content: center;
+    color: #000; /* Adjust the text color as needed */
+    user-select: none;
+  }
+  .brand-name:hover{
+    cursor: pointer;
+  }
+  
+  .nav-right-section a {
+    color: #000; /* Adjust the text color as needed */
+    text-decoration: none;
+    width: auto;
+    user-select: none;
+    /* font-weight: 300; */
+    /* margin-right: 15px; */
+  }
+  .active {
+    font-weight: bold;
+    color: rgb(94, 19, 233) !important;
+    /* font-weight: 500; */
+  }
+  
+  /* Add the following styles to align content */
+  .nav-left-section {
+    justify-content: flex-start;
+    width: 60%;
+  }
+  
+  .nav-right-section {
+    justify-content: space-evenly;
+    margin-right: 40px;
+    width: 40%;
+    margin: auto 50px;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  a:hover{
+    color: blueviolet;
+    font-weight: 600;
+  }
+  
+  a {
+    transition: transform 0.3s; 
+  }
+  
+  a:hover {
+    transform: scale(1.1); 
+  }
+  
+  a:not(:hover) {
+    transition: transform 0.3s; 
+  }
+  
+  a:not(:hover):hover ~ a {
+    transform: translateX(10px); 
+  }
+
+  
+
+
+  @media only screen and (max-width: 600px) {
+   
+    .active {
+      font-weight: bold;
+      color: blueviolet ;
+    }
+  
+    .nav-icon {
+      width: 6px;
+      height: 6px;
+      margin: 2px;
+      margin-left: 12px;
+      margin-right: 8px;
+      background-color: rgb(94, 19, 233);
+    }
+    
+    /* Navbar.css */
+    
+    .navbar-container {
+      display: flex;
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 90px;
+      width: 100%;
+      justify-content: space-between;
+      color: #000; /* Adjust the text color as needed */
+      z-index: 2;
+      padding: 0px;
+    }
+    
+    
+    .nav-left-section {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      justify-content: center;
+      width: 80%;
+    }
+    
+    .nav-right-section {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    }
+    
+    .brand-name {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-right: auto;
+      justify-content: center;
+      color: #000; /* Adjust the text color as needed */
+      user-select: none;
+    }
+    .brand-name:hover{
+      cursor: pointer;
+    }
+    
+    .nav-right-section a {
+      color: #000; /* Adjust the text color as needed */
+      text-decoration: none;
+      width: auto;
+      user-select: none;
+      /* margin-right: 15px; */
+    }
+
+
+    a:hover{
+      color: blueviolet;
+      font-weight: 600;
+    }
+    
+    a {
+      transition: transform 0.3s; 
+    }
+    
+    a:hover {
+      transform: scale(1.1); 
+    }
+    
+    a:not(:hover) {
+      transition: transform 0.3s; 
+    }
+    
+    a:not(:hover):hover ~ a {
+      transform: translateX(10px); 
+    }
+
+
+
+
+
+
+
+    .burger-menu{
+      height: 100%;
+      width: 4em;
+      background-color: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      cursor: pointer;
+      padding: 24px 1px;
+      margin: auto 8px auto 0px;
+    }
+    .burger-bar{
+      width: 2.5em;
+      height: 0.40em;
+      background-color: rgb(94, 19, 233);
+      border-radius: 0.5em;
+    }
+
+    .burger-bar:nth-child(1){
+      width: 1.20em;
+      align-self: flex-start;
+      margin-left: 14px;
+    }
+    .burger-bar:nth-child(2){
+      width: 2.5em;
+      align-self: center;
+    }
+    .burger-bar:nth-child(3){
+      width: 1.20em;
+      align-self: flex-end;
+      margin-right: 14px;
+    }
+  
+    .nav-right-section{
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      /* margin-top: 40px; */
+      background-color: white;
+      opacity: 1;
+      z-index: -1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      transition: ease-out 0.5s;
+    }
+  
+    .hidden{
+      display: none;
+    }
+  
+    .visible{
+      display: inherit;
+    }
+
+    .burger-bar.clicked:nth-child(1){
+        transform: rotate(45deg) translate(0.35em,0.3em);
+        transition: ease-out 0.3s;
+        transition: cubic-bezier(0.375, 0.750, 0.275, 1.450) 0.3s;
+        width: 1.2em;
+    }
+    .burger-bar.clicked:nth-child(2){
+      transform: rotate(-45deg);
+      transition: ease-out 0.3s;
+      width: 2.35em;
+      transition: cubic-bezier(0.375, 0.750, 0.275, 1.450) 0.3s;
+  }
+    .burger-bar.clicked:nth-child(3){
+      transform: rotate(45deg) translate(-0.35em,-0.3em);
+      transition: ease-out 0.3s;
+      transition: cubic-bezier(0.375, 0.750, 0.275, 1.450) 0.3s;
+      /* transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s; */
+      width: 1.2em;
+    }
+    .burger-bar.unclicked{
+      transform: rotate(0) translate(0);
+      transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+    }
+
+  }

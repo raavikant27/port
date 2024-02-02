@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+/* Footer.css */
+
+.footer-container {
+  background-color: #fff; /* Adjust the background color as needed */
+  color: #000; /* Adjust the text color as needed */
+  padding: 20px;
+  text-align: center;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Add additional styling as needed */
+
+
